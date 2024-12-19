@@ -15,6 +15,7 @@
     ../common/optional/droidcam.nix
     ../common/optional/fonts.nix
     ../common/optional/packages.nix
+    ../common/optional/samba.nix
     ../common/optional/zsh.nix
 
     inputs.hardware.nixosModules.common-pc
