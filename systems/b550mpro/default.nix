@@ -11,6 +11,7 @@
     ../common/optional/plasma.nix
 
     ../common/optional/docker.nix
+    ../common/optional/droidcam.nix
     ../common/optional/fonts.nix
     ../common/optional/packages.nix
     ../common/optional/amneziawg.nix
