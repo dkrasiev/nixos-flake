@@ -28,7 +28,12 @@
     homeManagerModules = import ./modules/home-manager;
 
     nixosConfigurations.b550mpro = nixos "b550mpro";
+
     homeConfigurations."dkrasiev@b550mpro" = home "dkrasiev";
-    devShells.${system}.emias = shell "emias";
+
+    devShells.${system} = {
+      emias = shell "emias";
+      prisma = shell "prisma";
+    };
   };
 }
