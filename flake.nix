@@ -20,8 +20,6 @@
     home = user: inputs.home-manager.lib.homeManagerConfiguration { specialArgs = { inherit inputs outputs; }; modules = [ ./users/${user} ]; };
     shell = name: import ./shells/${name} { inherit inputs outputs; };
   in {
-    inherit outputs;
-
     pkgs = import inputs.nixpkgs { inherit system; config.allowUnfree = true; };
     pkgs-unstable = import inputs.nixpkgs-unstable { inherit system; config.allowUnfree = true; };
     nixosModules = import ./modules/nixos;
