@@ -5,6 +5,11 @@
   system.stateVersion = "24.11";
 
   imports = [
+    inputs.hardware.nixosModules.common-pc
+    inputs.hardware.nixosModules.common-pc-ssd
+    inputs.hardware.nixosModules.common-cpu-amd
+    inputs.hardware.nixosModules.common-gpu-amd
+
     ../common/global
 
     ../common/optional/sddm.nix
@@ -17,11 +22,6 @@
     ../common/optional/packages.nix
     ../common/optional/samba.nix
     ../common/optional/zsh.nix
-
-    inputs.hardware.nixosModules.common-pc
-    inputs.hardware.nixosModules.common-pc-ssd
-    inputs.hardware.nixosModules.common-cpu-amd
-    inputs.hardware.nixosModules.common-gpu-amd
 
     ../common/users/dkrasiev.nix
 
