@@ -15,13 +15,15 @@
     inherit (inputs.self) outputs;
 
     system = "x86_64-linux";
-
-    nixos = system: inputs.nixpkgs.lib.nixosSystem { specialArgs = { inherit inputs outputs; }; modules = [ ./systems/${system} ]; };
-    home = user: inputs.home-manager.lib.homeManagerConfiguration { specialArgs = { inherit inputs outputs; }; modules = [ ./users/${user} ]; };
-    shell = name: import ./shells/${name} { inherit inputs outputs; };
-  in {
     pkgs = import inputs.nixpkgs { inherit system; config.allowUnfree = true; };
     pkgs-unstable = import inputs.nixpkgs-unstable { inherit system; config.allowUnfree = true; };
+
+    nixos = system: inputs.nixpkgs.lib.nixosSystem { specialArgs = { inherit inputs outputs; }; modules = [ ./systems/${system} ]; };
+    home = user: inputs.home-manager.lib.homeManagerConfiguration { inherit pkgs; extraSpecialArgs = { inherit inputs outputs; }; modules = [ ./users/${user} ]; };
+    shell = name: import ./shells/${name} { inherit inputs outputs; };
+  in {
+    inherit pkgs pkgs-unstable;
+
     nixosModules = import ./modules/nixos;
     homeManagerModules = import ./modules/home-manager;
 
