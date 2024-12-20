@@ -22,7 +22,7 @@
     home = user: inputs.home-manager.lib.homeManagerConfiguration { inherit pkgs; extraSpecialArgs = { inherit inputs outputs; }; modules = [ ./users/${user} ]; };
     shell = name: import ./shells/${name} { inherit inputs outputs; };
   in {
-    inherit pkgs pkgs-unstable;
+    inherit system pkgs pkgs-unstable;
 
     nixosModules = import ./modules/nixos;
     homeManagerModules = import ./modules/home-manager;

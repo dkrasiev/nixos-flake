@@ -7,7 +7,7 @@ let
     rev = "nixos-20.09";
     hash = "sha256-tAMJnUwfaDEB2aa31jGcu7R7bzGELM9noc91L2PbVjg=";
   };
-  pkgs-20-09 = import nixpkgs-20-09 { inherit (inputs.nixpkgs) hostPlatform; };
+  pkgs-20-09 = import nixpkgs-20-09 { inherit (outputs) system; };
 in outputs.pkgs.mkShell {
   packages = [
     outputs.pkgs.jdk8
