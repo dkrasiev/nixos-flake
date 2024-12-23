@@ -28,6 +28,8 @@
     homeManagerModules = import ./modules/home-manager;
 
     nixosConfigurations.b550mpro = nixos "b550mpro";
+    nixosConfigurations.nixos-work = nixos "work-pc";
+    nixosConfigurations.work-pc = nixos "work-pc";
 
     homeConfigurations."dkrasiev@b550mpro" = home "dkrasiev";
 
