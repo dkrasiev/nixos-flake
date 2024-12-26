@@ -21,6 +21,7 @@
     ../common/optional/samba.nix
     ../common/optional/ssh.nix
     ../common/optional/zsh.nix
+    ../common/optional/zram.nix
 
     ../common/users/dkrasiev.nix
 

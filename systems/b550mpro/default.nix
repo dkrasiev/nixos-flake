@@ -21,6 +21,7 @@
     ../common/optional/fonts.nix
     ../common/optional/packages.nix
     ../common/optional/samba.nix
+    ../common/optional/zram.nix
     ../common/optional/zsh.nix
 
     ../common/users/dkrasiev.nix
