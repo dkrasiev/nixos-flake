@@ -21,6 +21,7 @@
     obs-studio easyeffects
     # gnome-boxes
     # kdePackages.kcolorpicker epick gpick
+    remmina
 
     ### CLI UTILS
     # archives
