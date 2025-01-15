@@ -1,6 +1,7 @@
 { inputs, ... }:
 
 {
+  networking.hostName = "nixos-work-pc";
   system.stateVersion = "24.11";
 
   imports = [
