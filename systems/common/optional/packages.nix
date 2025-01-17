@@ -27,7 +27,7 @@
     # archives
     zip
     unzip
-    # rar
+    rar
     p7zip
     # wayland clipboard
     wl-clipboard
