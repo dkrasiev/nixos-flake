@@ -27,6 +27,7 @@
     ../common/users/dkrasiev.nix
 
     ./hardware-configuration.nix
+    ./modules/syncthing.nix
   ];
 }
 
