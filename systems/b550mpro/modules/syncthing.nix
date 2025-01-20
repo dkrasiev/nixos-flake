@@ -16,8 +16,7 @@
         devices = {
           "phone" = { id = "ZXKR363-Y32NEBB-3TW5SAN-IIORSEA-JPSLHP5-OOHCIPW-JFVN4J4-RWM3PAK"; };
           "macbook" = { id = "FQ74OEB-2O3FQYT-UBS7KXC-JQBGNOM-55HFAHZ-OA36VNH-KC3FRBK-XTAU7QL"; };
-          # TODO: add id
-          "work-pc" = { id = ""; };
+          "work-pc" = { id = "JIXUFVS-DE3AXCT-ACBKCJW-PLLZG45-SNFSFRL-FR3QKRQ-YBACYUF-PLA2TQC"; };
         };
 
         folders = {
