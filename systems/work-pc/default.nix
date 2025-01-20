@@ -20,7 +20,7 @@
     ../common/optional/fonts.nix
     ../common/optional/packages.nix
     ../common/optional/samba.nix
-    ../common/optional/ssh.nix
+    ../common/optional/openssh.nix
     ../common/optional/zsh.nix
     ../common/optional/zram.nix
 
