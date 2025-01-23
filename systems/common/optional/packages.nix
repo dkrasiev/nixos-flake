@@ -7,7 +7,8 @@
     # media
     mpv
     # office suite
-    libreoffice-qt
+    # libreoffice-qt
+    onlyoffice-desktopeditors
     # browsers
     google-chrome firefox
 
