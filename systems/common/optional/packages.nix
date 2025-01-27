@@ -65,8 +65,8 @@
 
     ### shell/cli
     zsh oh-my-posh
-    # git
-    git lazygit gh
+    git gh
+    lazygit lazydocker
 
     ### other gui apps
     # http clients
