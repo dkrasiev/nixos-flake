@@ -35,6 +35,7 @@
     devShells.${system} = {
       emias = shell "emias";
       prisma = shell "prisma";
+      playwright = shell "playwright";
     };
   };
 }
