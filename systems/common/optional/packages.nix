@@ -2,14 +2,14 @@
 
 {
   environment.systemPackages = with outputs.pkgs; [
-    # disk management
+    ## disk management
     filelight kdiskmark gnome-disk-utility
-    # media
+    ## media
     mpv
     # office suite
     # libreoffice-qt
     onlyoffice-desktopeditors
-    # browsers
+    ## browsers
     google-chrome firefox
 
     thunderbird
@@ -24,52 +24,52 @@
     # kdePackages.kcolorpicker epick gpick
     remmina
 
-    ### CLI UTILS
-    # archives
+    ## CLI UTILS
+    ### archives
     zip
     unzip
     rar
     p7zip
     # wayland clipboard
     wl-clipboard
-    # nixos
+    ### nixos
     nh nurl
-    # search
+    ### search
     ripgrep fzf zoxide
-    # videos
+    ### videos
     ffmpeg
 
-    ### package managers / languages
-    # C
+    ## package managers / languages
+    ### C
     gnumake cmake gcc
-    # Lua
+    ### Lua
     luarocks
-    # JavaScript
+    ### JavaScript
     nodejs
-    # Python
+    ### Python
     python3
-    # Java
+    ### Java
     maven ant
-    # Rust
+    ### Rust
     rustc cargo
 
-    ### terminal
+    ## terminal
     kitty
 
-    ### tmux
+    ## tmux
     tmux tmuxinator
 
-    ### editors
+    ## editors
     neovim vscode
     # jetbrains.idea-community-bin
 
-    ### shell/cli
+    ## shell/cli
     zsh oh-my-posh
     git gh
     lazygit lazydocker
 
-    ### other gui apps
-    # http clients
+    ## other gui apps
+    ### http clients
     postman bruno
     # insomnia
     dbeaver-bin
