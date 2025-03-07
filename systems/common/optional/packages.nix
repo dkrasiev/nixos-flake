@@ -24,6 +24,9 @@
     # kdePackages.kcolorpicker epick gpick
     remmina
 
+    # cloud storages
+    yandex-disk onedrive kdePackages.kio-gdrive
+
     ## CLI UTILS
     ### archives
     zip
