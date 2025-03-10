@@ -23,9 +23,7 @@
     # gnome-boxes
     # kdePackages.kcolorpicker epick gpick
     remmina
-
-    # cloud storages
-    yandex-disk onedrive kdePackages.kio-gdrive
+    rclone
 
     ## CLI UTILS
     ### archives
