@@ -15,7 +15,7 @@
     ../common/optional/sddm.nix
     ../common/optional/plasma.nix
 
-    ../common/optional/amneziawg.nix
+    ../common/optional/amnezia-vpn.nix
     ../common/optional/docker.nix
     ../common/optional/droidcam.nix
     ../common/optional/fonts.nix
