@@ -10,8 +10,9 @@
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "usb_storage" "sd_mod" "sr_mod" ];
   boot.initrd.kernelModules = [ ];
+  boot.kernelPackages = pkgs.linuxPackages_zen;
   boot.kernelModules = [ "kvm-intel" ];
-  boot.extraModulePackages = [ ];
+  boot.extraModulePackages = with config.boot.kernelPackages; [ amneziawg ];
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/a5829b14-d9c8-4a18-a423-eb9e768522f3";
