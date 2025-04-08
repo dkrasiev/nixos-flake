@@ -19,7 +19,7 @@
     ../common/optional/docker.nix
     ../common/optional/droidcam.nix
     ../common/optional/fonts.nix
-    ../common/optional/llm.nix
+    # ../common/optional/llm.nix
     ../common/optional/packages.nix
     ../common/optional/samba.nix
     ../common/optional/zram.nix
