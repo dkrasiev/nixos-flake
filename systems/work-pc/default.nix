@@ -21,6 +21,7 @@
     ../common/optional/packages.nix
     ../common/optional/samba.nix
     ../common/optional/openssh.nix
+    ../common/optional/virtualbox.nix
     ../common/optional/zsh.nix
     ../common/optional/zram.nix
 
