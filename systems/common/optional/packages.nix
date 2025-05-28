@@ -3,24 +3,28 @@
 {
   environment.systemPackages = with outputs.pkgs; [
     ## disk management
-    filelight kdiskmark gnome-disk-utility
+    kdePackages.filelight
+    kdiskmark
+    gnome-disk-utility
     ## media
     mpv
     # office suite
     # libreoffice-qt
     onlyoffice-desktopeditors
     ## browsers
-    google-chrome firefox
+    google-chrome
+    firefox
 
     thunderbird
     telegram-desktop
     gimp
-    kdenlive
+    kdePackages.kdenlive
     obsidian
     stow
     qbittorrent
-    obs-studio easyeffects
-    # gnome-boxes
+    obs-studio
+    easyeffects
+    gnome-boxes
     # kdePackages.kcolorpicker epick gpick
     remmina
     rclone
@@ -34,15 +38,20 @@
     # wayland clipboard
     wl-clipboard
     ### nixos
-    nh nurl
+    nh
+    nurl
     ### search
-    ripgrep fzf zoxide
+    ripgrep
+    fzf
+    zoxide
     ### videos
     ffmpeg
 
     ## package managers / languages
     ### C
-    gnumake cmake gcc
+    gnumake
+    cmake
+    gcc
     ### Lua
     luarocks
     ### JavaScript
@@ -50,28 +59,37 @@
     ### Python
     python3
     ### Java
-    maven ant
+    openjdk
+    maven
+    ant
     ### Rust
-    rustc cargo
+    rustc
+    cargo
 
     ## terminal
     kitty
 
     ## tmux
-    tmux tmuxinator
+    tmux
+    tmuxinator
 
     ## editors
-    neovim vscode
+    neovim
+    vscode
     # jetbrains.idea-community-bin
 
     ## shell/cli
-    zsh oh-my-posh
-    git gh
-    lazygit lazydocker
+    zsh
+    oh-my-posh
+    git
+    gh
+    lazygit
+    lazydocker
 
     ## other gui apps
     ### http clients
-    postman bruno
+    postman
+    bruno
     # insomnia
     dbeaver-bin
     # burpsuite

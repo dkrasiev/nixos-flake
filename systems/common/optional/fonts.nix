@@ -1,5 +1,5 @@
 { outputs, ... }:
 
 {
-  fonts.packages = with outputs.pkgs; [ (nerdfonts.override { fonts = [ "JetBrainsMono" ]; }) ];
+  fonts.packages = with outputs.pkgs; [ nerd-fonts.jetbrains-mono ];
 }
