@@ -21,6 +21,7 @@
     kdePackages.kdenlive
     obsidian
     stow
+    chezmoi
     qbittorrent
     obs-studio
     easyeffects
