@@ -14,14 +14,17 @@
     ../common/optional/sddm.nix
     ../common/optional/plasma.nix
 
+    ../common/optional/bluetooth.nix
     ../common/optional/amnezia-vpn.nix
     ../common/optional/docker.nix
-    ../common/optional/droidcam.nix
+    ../common/optional/firewall.nix
     ../common/optional/fonts.nix
     ../common/optional/packages.nix
     ../common/optional/samba.nix
     ../common/optional/openssh.nix
+    ../common/optional/kdeconnect.nix
     ../common/optional/virtualbox.nix
+    # ../common/optional/wireless.nix
     ../common/optional/zsh.nix
     ../common/optional/zram.nix
 
