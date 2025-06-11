@@ -32,6 +32,7 @@
 
     ./hardware-configuration.nix
     ./modules/syncthing.nix
+    ./modules/firewall.nix
   ];
 }
 
