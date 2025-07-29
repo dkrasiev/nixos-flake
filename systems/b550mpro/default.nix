@@ -24,12 +24,15 @@
     ../common/optional/packages.nix
     ../common/optional/samba.nix
     ../common/optional/zram.nix
+    # ../common/optional/virtualbox.nix
     ../common/optional/zsh.nix
 
     ../common/users/dkrasiev.nix
 
     ./hardware-configuration.nix
+
     ./modules/syncthing.nix
+    # ./modules/hyprland.nix
   ];
 }
 

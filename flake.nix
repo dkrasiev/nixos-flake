@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -17,10 +16,6 @@
 
       system = "x86_64-linux";
       pkgs = import inputs.nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-      };
-      pkgs-unstable = import inputs.nixpkgs-unstable {
         inherit system;
         config.allowUnfree = true;
       };
@@ -38,7 +33,7 @@
         };
       shell = name: import ./shells/${name} { inherit inputs outputs; };
     in {
-      inherit system pkgs pkgs-unstable;
+      inherit system pkgs;
 
       nixosModules = import ./modules/nixos;
       homeManagerModules = import ./modules/home-manager;

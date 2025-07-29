@@ -1,8 +1,8 @@
 { outputs, ... }:
 
 {
-  environment.systemPackages = [
-    outputs.pkgs-unstable.amneziawg-tools
-    outputs.pkgs-unstable.amneziawg-go
+  environment.systemPackages = with outputs.pkgs; [
+    amneziawg-tools
+    amneziawg-go
   ];
 }
