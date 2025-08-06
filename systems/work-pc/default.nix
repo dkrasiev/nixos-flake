@@ -23,6 +23,7 @@
     ../common/optional/samba.nix
     ../common/optional/openssh.nix
     ../common/optional/kdeconnect.nix
+    ../common/optional/tailscale.nix
     ../common/optional/virtualbox.nix
     # ../common/optional/wireless.nix
     ../common/optional/zsh.nix
